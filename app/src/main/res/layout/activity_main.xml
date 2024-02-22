@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/playPauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play/Pausa"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:onClick="togglePlayPause" />
+
+    <Button
+        android:id="@+id/randomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reproducir Aleatoria"
+        android:layout_below="@+id/playPauseButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="playRandomSong" />
+
+    <TextView
+        android:id="@+id/songNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/randomButton"
+        android:layout_marginTop="44dp"
+        android:text="Nombre de la canción"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/songCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songNameTextView"
+        android:layout_marginTop="10dp"
+        android:text="Número de canciones: 0"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
